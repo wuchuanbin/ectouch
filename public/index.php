@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Laravel - A PHP Framework For Web Artisans
+ * ECTouch - An E-Commerce Platform
  *
- * @package  Laravel
- * @author   Taylor Otwell <taylor@laravel.com>
+ * @package  ECTouch
+ * @author   carson <wanganlin@ecmoban.com>
  */
 
 /*

@@ -1,9 +1,15 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
-    "license": "MIT",
+    "name": "ectouch/ectouch",
+    "description": "ECTouch E-Commerce Platform for PHP And Laravel Framework.",
+    "keywords": ["ectouch", "b2c", "o2o", "shop", "mall", "wechat"],
+    "license": "GPL",
     "type": "project",
+    "support": {
+        "issues": "https://github.com/ectouch/ectouch/issues?state=open",
+        "forum": "https://www.ectouch.cn/forum/",
+        "wiki": "https://www.ectouch.cn/wiki/",
+        "source": "https://github.com/ectouch/ectouch"
+    },
     "require": {
         "php": ">=5.6.4",
         "laravel/framework": "5.4.*",
@@ -20,7 +26,11 @@
         ],
         "psr-4": {
             "App\\": "app/"
-        }
+        },
+        "files": [
+            "app/Support/constant.php",
+            "app/Support/helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
