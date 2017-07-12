@@ -235,7 +235,7 @@ class SqlDump
             }
         }
 
-        $this->dump_sql .= '-- END ecshop v2.x SQL Dump Program ';
+        $this->dump_sql .= '-- END ECTouch v3.x SQL Dump Program ';
         $this->put_tables_list($path, $tables);
 
         return $tables;
@@ -258,13 +258,13 @@ class SqlDump
         $sys_info['mysql_ver'] = $this->db->version();
         $sys_info['date'] = date('Y-m-d H:i:s');
 
-        $head = "-- ecshop v2.x SQL Dump Program\r\n" .
+        $head = "-- ECTouch v3.x SQL Dump Program\r\n" .
             "-- " . $sys_info['web_server'] . "\r\n" .
             "-- \r\n" .
             "-- DATE : " . $sys_info["date"] . "\r\n" .
             "-- MYSQL SERVER VERSION : " . $sys_info['mysql_ver'] . "\r\n" .
             "-- PHP VERSION : " . $sys_info['php_ver'] . "\r\n" .
-            "-- ECShop VERSION : " . VERSION . "\r\n" .
+            "-- ECTouch VERSION : " . VERSION . "\r\n" .
             "-- Vol : " . $vol . "\r\n";
 
         return $head;
@@ -298,7 +298,7 @@ class SqlDump
                     $sql_info['mysql_ver'] = $value;
                 } elseif ($type == 'PHP VERSION') {
                     $sql_info['php_ver'] = $value;
-                } elseif ($type == 'ECShop VERSION') {
+                } elseif ($type == 'ECTouch VERSION') {
                     $sql_info['ecs_ver'] = $value;
                 } elseif ($type == 'Vol') {
                     $sql_info['vol'] = $value;
